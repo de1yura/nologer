@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+.main .maps .selected {
+  border: solid 3px red;
+  box-shadow: 5px 5px black;
+}
+.main .h3 {
+  margin: 0;
+  font-size: 35px;
+  display: flex;
+  color: #341664;
+}
+.main .h3 .addCourseButton {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+.main .h3 .addCourseButton:hover {
+  background-color: #D1D1D1;
+  transition: ease 0.6s;
+}
+.main .h3 .addCourseButton > * {
+  color: #341664;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+.list p {
+  margin: 10px;
+}
+
+.label {
+  margin: 10px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.popup .lessonsOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.popup .lessonsModal {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 100;
+  height: 55%;
+}
+.popup .lessonsModal .p {
+  font-size: 25px;
+  color: #9F9F9F;
+  position: relative;
+  top: 2%;
+  left: 1%;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.popup .lessonsModal .lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.popup .lessonsModal .lessons .lessonName, .popup .lessonsModal .lessons .lessonDescription {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  color: #341664;
+}
+.popup .lessonsModal .lessons h3 {
+  width: 65%;
+  color: #341664;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+}
+.popup .lessonsModal .lessons .input1 {
+  border: none;
+  background-color: #D1D1D1;
+  padding: 3px;
+  border-radius: 5px;
+  opacity: 0.3;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 30px;
+  font-family: "Roboto";
+}
+.popup .lessonsModal .lessons .input2 {
+  border: none;
+  background-color: #D1D1D1;
+  padding: 3px;
+  border-radius: 5px;
+  opacity: 0.3;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-family: "Roboto";
+}
+.popup .lessonsModal .lessons label {
+  font-weight: 600;
+  font-family: "Roboto";
+  margin: 2%;
+}
+.popup .lessonsModal .lessons button {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 600;
+  width: 45%;
+  height: 50px;
+  margin: 0px 20px;
+  padding: 15px;
+  background-color: #341664;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+.popup .lessonsModal .lessons .lessonDescription {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+
+.maps button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  padding-bottom: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  width: 370px;
+  height: 95px;
+  font-family: "Inter", sans-serif;
+  margin: 20px 10px;
+}
+.maps button .selected {
+  border: solid 1px red;
+}
+
+.notSelected {
+  border: solid #948500 1px;
+  width: 100%;
+  min-width: 440px;
+  border-radius: 20px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+  margin: 20px 5%;
+  padding: 5px 20px 20px 20px;
+}
+.notSelected .cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+.notSelected .cardContainer .cardHeader {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.notSelected .cardContainer .cardHeader h4 {
+  font-size: 25px;
+  color: #948500;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+.notSelected .cardContainer .cardHeader p {
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  color: darkgray;
+  font-size: 1em;
+}
+.notSelected .cardContainer .editIcon {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 1vh;
+  justify-content: space-between;
+  pointer-events: all;
+  margin-top: 7px;
+  align-items: flex-end;
+  color: #341664;
+  grid-row: 1;
+  grid-column: 2;
+}
+.notSelected .cardContainer .editIcon .deleteIcon {
+  margin-right: 4px;
+}
+
+.selected {
+  border: solid #F43268 3px;
+  width: 100%;
+  min-width: 440px;
+  border-radius: 20px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+  margin: 20px 5%;
+  padding: 5px 20px 20px 20px;
+}
+.selected .cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+.selected .cardContainer .cardHeader {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.selected .cardContainer .cardHeader h4 {
+  font-size: 25px;
+  color: #F43268;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+.selected .cardContainer .cardHeader p {
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  color: darkgray;
+  font-size: 1em;
+}
+.selected .cardContainer .editIcon {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 1vh;
+  justify-content: space-between;
+  pointer-events: all;
+  margin-top: 7px;
+  align-items: flex-end;
+  color: #341664;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.maps button {
+  background-color: white;
+  border: 2px solid #948500;
+  border-radius: 15px;
+  width: 15rem;
+}

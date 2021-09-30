@@ -1,0 +1,82 @@
+@import '../../assets/styles/variables';
+
+.listContainer{
+  min-width: 380px;
+  width: 30vw;
+  margin: 20px;
+
+  .listMenu{
+      margin-bottom:20px;
+  }
+
+  .courseListHeader{
+    font-size:$sec-font-size*2.2;
+    display:flex;
+    justify-content: space-between; 
+    > p {
+        margin:0 0 0 20px;
+        color:$prm-color;
+    }
+    > .addCourseButton{
+      height: 35px;
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: $sec-font-size*2.4;
+      &:hover{
+        background-color: $grey-light;
+        transition: ease 0.6s;
+      }
+      > *{
+        color: $prm-color;
+      }
+    }
+  }
+
+  .filters{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 25%;
+  
+    > button{
+        background-color: white;
+        border: none;
+        color: $grey-dark;
+        font-size: $sec-font-size*1.8;
+        font-weight: $sec-font-weight;
+        border-radius: 20px;
+        width: 30vw;
+        height: 30px;
+        &:hover{
+          background-color:$grey-light;
+          transition: ease 0.5s;
+        }
+    }
+    .current {
+      text-decoration: underline 3px;
+
+    }
+  }
+
+  .allCoursesList{
+    display:flex;
+    flex-direction:column;
+    justify-content: left;
+    align-items:center;
+}}
+
+@media only screen and (max-width: 940px){
+  .listContainer{
+    width: 100%;
+    min-width: 450px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .listContainer{
+    width: 100%;
+  }
+}

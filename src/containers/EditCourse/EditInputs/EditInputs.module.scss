@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "../../../assets/Styles/variables";
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  justify-content: center;
+  width: 35vw;
+  padding: 10px;
+ 
+}
+    .inputHeadings {
+      width: 30vw;
+      height: 5vh;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      display: flex;
+      align-content: center;
+      color: $sec-color;
+      font-weight: $prm-font-weight;
+      margin-bottom: 10px;
+    }
+
+    .smallInput {
+    width: 30vw;
+    height: 15vh;
+    border: 1px solid $grey-light;
+    border-radius: 6px;
+    font-family:  $prm-font-family;
+    font-size: 1em;
+    color: $prm-color;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+.dateInput {
+  width: 30vw;
+  height: 15vh;
+  border: 1px solid $grey-light;
+  font-family:  $prm-font-family;
+  color: $prm-color;
+  margin: 0 auto;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 2.5vh;
+  border-radius: 6px;
+}

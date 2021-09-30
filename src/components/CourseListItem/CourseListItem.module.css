@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.courseButton {
+  width: 100%;
+  height: 70px;
+  margin: 15px 0px;
+  padding: 40px 12%;
+  border: none;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.courseButton .courseInfo {
+  text-align: left;
+  font-size: 18px;
+  width: 50%;
+}
+.courseButton .courseInfo .nameDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courseButton .courseInfo .nameDate > .nameDate__name {
+  min-width: 50%;
+}
+.courseButton .courseInfo .nameDate > .nameDate__date {
+  margin: 2px 0 0 20px;
+  font-size: 14px;
+}
+.courseButton .courseInfo .nameDate > p {
+  text-align: left;
+  margin: 0;
+}
+
+.editIcon > * {
+  font-size: 20px;
+  margin-left: 60px;
+}
+.editIcon > *:hover {
+  font-size: 23px;
+}
+
+/*colour classes*/
+.red {
+  background-color: #FFB6A6;
+  color: #B52100;
+}
+.red:hover {
+  box-shadow: 0 0 0 3px #B52100;
+  transition: ease 0.3s;
+}
+.red p {
+  background-color: #FFB6A6;
+  color: #B52100;
+}
+.red .bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #B52100;
+  background-color: #B52100;
+  border-radius: 8px;
+}
+
+.blue {
+  background-color: #A6D4FF;
+  color: #005EB5;
+}
+.blue:hover {
+  box-shadow: 0 0 0 3px #005EB5;
+  transition: ease 0.3s;
+}
+.blue p {
+  background-color: #A6D4FF;
+  color: #005EB5;
+}
+.blue .bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #005EB5;
+  background-color: #005EB5;
+  border-radius: 8px;
+}
+
+.green {
+  background-color: #A6FFB9;
+  color: #00BD2A;
+}
+.green:hover {
+  box-shadow: 0 0 0 3px #00BD2A;
+  transition: ease 0.3s;
+}
+.green p {
+  background-color: #A6FFB9;
+  color: #00BD2A;
+}
+.green .bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #00BD2A;
+  background-color: #00BD2A;
+  border-radius: 8px;
+}
+
+.yellow {
+  background-color: #FFF6A6;
+  color: #948500;
+}
+.yellow:hover {
+  box-shadow: 0 0 0 3px #948500;
+  transition: ease 0.3s;
+}
+.yellow p {
+  background-color: #FFF6A6;
+  color: #948500;
+}
+.yellow .bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #948500;
+  background-color: #948500;
+  border-radius: 8px;
+}
+
+/*bullet point classes*/
+.notBullet {
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 940px) {
+  .courseButton {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .courseButton {
+    width: 100%;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.listContainer {
+  min-width: 380px;
+  width: 30vw;
+  margin: 20px;
+}
+.listContainer .listMenu {
+  margin-bottom: 20px;
+}
+.listContainer .courseListHeader {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.listContainer .courseListHeader > p {
+  margin: 0 0 0 20px;
+  color: #341664;
+}
+.listContainer .courseListHeader > .addCourseButton {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+}
+.listContainer .courseListHeader > .addCourseButton:hover {
+  background-color: #D1D1D1;
+  transition: ease 0.6s;
+}
+.listContainer .courseListHeader > .addCourseButton > * {
+  color: #341664;
+}
+.listContainer .filters {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25%;
+}
+.listContainer .filters > button {
+  background-color: white;
+  border: none;
+  color: #9F9F9F;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 30vw;
+  height: 30px;
+}
+.listContainer .filters > button:hover {
+  background-color: #D1D1D1;
+  transition: ease 0.5s;
+}
+.listContainer .filters .current {
+  text-decoration: underline 3px;
+}
+.listContainer .allCoursesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+@media only screen and (max-width: 940px) {
+  .listContainer {
+    width: 100%;
+    min-width: 450px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .listContainer {
+    width: 100%;
+  }
+}

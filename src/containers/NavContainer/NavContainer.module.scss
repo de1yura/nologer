@@ -1,0 +1,84 @@
+@import "../../assets/styles/variables";
+
+.navContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    h1 {
+      font-family: $prm-font-family;
+      font-weight: $sec-font-weight;
+      color: $prm-color;
+      margin-left: 40px;
+      font-weight: bold;   
+       
+    }
+
+    a:link {
+      text-decoration: none;
+    } 
+
+    ul {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      align-items: center;
+      width: 20%;
+      font-size: 1.2em;
+      // min-width: 150px;
+      li{
+        margin:0 10px;
+      }
+      li > a {
+        font-family: $prm-font-family;
+        color: $grey-dark;       
+        font-weight: bold;
+      }
+ 
+
+    }
+
+    button {
+      color: $grey-dark;
+      font-size: $prm-font-size*4;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      :hover {
+        opacity: 0.6;
+        transition: 0.6s;
+      }
+    }
+
+    .active {
+      color: black;
+    }
+
+    .logoutBtn {
+      width: 10%;
+      margin: 0;
+      cursor: pointer,
+
+      
+    }
+}
+
+.navElements{
+  display: flex;
+  min-width: 20%;
+}
+
+@media only screen and (max-width: 812px) {
+  .navContainer{
+    ul{
+      margin: 0;
+    }
+
+  }
+
+}
+

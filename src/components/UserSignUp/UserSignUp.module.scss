@@ -1,0 +1,133 @@
+@import "../../Assets/Styles/variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $prm-font-family;
+}
+
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding:30px;
+  color: $prm-color;
+  align-content: space-between;
+  font-family: $prm-font-family;
+  height: 100vh;
+}
+
+.content{
+  width: 350px;
+  align-self: center;
+  width: 500px;
+}
+
+h1{
+  margin: 20px 0;
+}
+
+h2{
+  margin: 20px 0 0 0;
+  color: $sec-color;
+}
+
+.name{
+  position: relative;
+  margin-bottom: 5px;
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.pass{
+  margin-bottom: 5px;
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 2%;
+}
+
+.userName{
+  margin-bottom: 5px;
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.email {
+  margin-bottom: 5px;
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.confirm { 
+  margin-bottom: 5px;
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 2%;
+}
+
+
+.btn {
+  font-size: 15px;
+  width:150px;
+  height: 50px;
+  margin: 20px;
+  padding:15px;
+  background-color: $prm-color;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.loginpara{
+  font-size: smaller;
+  margin: 20px 0;
+}
+
+p {
+  text-align: left;
+  margin-left: 16%;
+  color: $sec-color;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: x-small;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .signup{
+    margin-left: 20%;
+  }
+
+  p {
+    text-align: left;
+    margin-left: 17%;
+    color: $sec-color;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+}

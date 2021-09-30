@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.lessonView {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vh;
+}
+
+.lessonViewTitle {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto";
+  color: #341664;
+  width: 100%;
+}
+.lessonViewTitle .lessonViewNav {
+  height: 40px;
+}
+.lessonViewTitle .lessonViewNav button {
+  font-size: 20px;
+  color: #341664;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+}
+.lessonViewTitle .lessonViewNav button:hover {
+  background-color: #E6E3EC;
+  transition: ease 0.6s;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+.lessonViewButtons {
+  width: 100%;
+}

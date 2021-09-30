@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-right: 50px;
+}
+.container .headercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: baseline;
+  margin-top: 1vh;
+}
+.container .headercontainer .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #341664;
+  margin-left: 10px;
+  width: 120%;
+}
+.container .headercontainer .head .addCourseButton {
+  height: 30px;
+  width: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9px;
+}
+.container .headercontainer .head .addCourseButton:hover {
+  background-color: #E6E3EC;
+  transition: ease 0.6s;
+}
+.container .headercontainer .head .addCourseButton > * {
+  color: #341664;
+}
+
+.curriculumBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

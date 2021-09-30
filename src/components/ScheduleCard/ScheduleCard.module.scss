@@ -1,0 +1,115 @@
+@import "../../Assets/Styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+    border: solid #948500 1px;
+    width: 90%;
+    min-width: 440px;
+    border-radius: 20px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    margin: 20px 5%;
+    padding: 5px 20px 20px 20px;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.flexInner, .flexinnersec {
+    display: flex;
+    // width: 300px;
+    justify-content: space-evenly;
+    margin:0 7px;
+    width: 17vw;
+    height: 10vh;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+.lightgreyone, .lightgreytwo {
+    color: lightgrey;
+    text-align: end;
+    font-size:$sec-font-size*1.5;
+    font-weight: bold;       
+}
+
+.lightgreytwo{
+    margin-left: 20px;
+}
+.day{
+    color:#948500;
+    font-size:$sec-font-size*2.2;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.date{
+    color: #ABABAB;
+    font-size:$sec-font-size* 1.5;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.blacktext, .blacktextsec{
+    margin-left: 1vw;
+    font-weight: bold;
+    font-size:$sec-font-size*1.5;
+    width: 1vw;
+    height: 5vw;
+}
+
+.blacktext{
+    margin-left: 1vw;
+    width: 10vw;
+    height: 5vh;
+    flex-wrap: wrap;
+}
+
+.pOne, .pTwo, .pThree, .pFour{
+    margin: 4px 0;
+}
+
+@media only screen and (max-width: 940px){
+    .container{
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        margin-right: 100px;
+        width: 400px;
+        margin-left: 0;
+
+    }
+}

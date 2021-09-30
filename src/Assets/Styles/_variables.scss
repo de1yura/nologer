@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+//Fonts and sizes
+$prm-font-family:'Roboto';
+$prm-font-weight:400;
+$sec-font-weight:600;
+// For sizes use (*n) formula where n is multiple used on font size
+// "font-size:$prm-font-size*5; --> 5*5 --> 25px"
+$prm-font-size:5px;
+$sec-font-size:10px;
+// Border radius
+$prm-border:15px;
+$sec-border:25px;
+// Colors for text
+// Main colors
+$prm-color: #341664;
+$sec-color: #000000;
+$grey-light:#D1D1D1;
+$grey-dark:#9F9F9F; 
+// Home page and course overview
+// Colors for text
+$dark-yellow:#948500;
+$dark-red:#B52100;
+$dark-blue:#005EB5;
+$dark-green:#00BD2A;
+// Colors for backgrounds
+$light-yellow:#FFF6A6;
+$light-red:#FFB6A6;
+$light-blue:#A6D4FF;
+$light-green:#A6FFB9;

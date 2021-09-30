@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables';
+
+.schedule{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    margin: 20px 0px;
+
+    .scheduleHeader{
+        margin: 20px;
+        > p{
+            margin:0 0 0 20px;
+            font-size: $sec-font-size*2.2;
+            color: $prm-color;
+        }
+    }
+    > section{
+        width: 100%;
+    }
+}
+.scheduleSubheading {
+    margin-bottom: 50px;
+}

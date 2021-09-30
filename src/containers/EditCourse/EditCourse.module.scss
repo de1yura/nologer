@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "../../assets/styles/variables";
+
+    .inputContainer {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    font-family: $prm-font-family;
+
+ }
+    .heading {
+       font-size: 35px;
+       grid-column: 1;
+       grid-row: 1;
+       color: $sec-color;
+       margin: 0px;
+       margin-left: 2vw;
+       display: flex;
+        justify-content: flex-start;
+        width: 35vw;
+        height: 10vh;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+
+
+    .courseHeading {
+        font-size: 35px;
+        font-weight: 800;
+        grid-column: 1;
+        grid-row: 1;
+        color: $sec-color;
+        justify-content: flex-start;
+        }     
+        
+
+ .exitBtnContainer {
+  
+    width: 35vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0px auto ;
+    
+    .exitBtn {
+        font-size: 25px;
+        grid-column: 2;
+        grid-row: 1;
+        color: $grey-dark;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0 0 ;
+        align-self: end;
+        float: right;
+    }    
+
+}
+.descriptionContainer {
+    grid-area:  5 / 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    justify-content: center;
+    width: 35vw;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+    .inputHeadings {
+        width: 30vw;
+        height: 5vh;
+        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        color: $sec-color;
+        font-weight: $prm-font-weight;
+        margin-bottom: 10px;
+      }
+
+.description {
+    width: 30vw;
+    height: 15vh;
+    border: 1px solid $grey-light;
+    border-radius: 6px;
+    font-family:  $prm-font-family;
+    font-size: 18px;
+    color: $prm-color;
+    margin: 0 auto;
+    padding: 5px;
+    }
+}
+
+.button { 
+    grid-area:  6 / 1 / 6 / 3;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    width: 35vw;
+    height: 15vh;
+    
+    margin: 0 auto;
+
+
+    .submitBtn {
+        width: 30vw;
+        height: 5vh;
+        background-color: $prm-color;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-family: $prm-font-family;
+        margin: 0 auto;
+        margin-top: 2vw;
+    }
+
+        } 
+
+        .dropdownWrapper {
+            display: flex;
+            flex-direction: column;
+            height: 10vh;
+            justify-content: center;
+            width: 35vw;
+            padding: 10px;
+          }
+          
+          
+              .inputHeadings {
+                width: 30vw;
+                height: 5vh;
+                margin: 0 auto;
+                display: flex;
+                align-content: center;
+                color: $sec-color;
+                font-weight: $prm-font-weight;
+                margin-bottom: 5px;
+              }
+          
+              .dropDown {
+              width: 30vw;
+              height: 12vh;
+              border: 1px solid $grey-light;
+              border-radius: 6px;
+              font-family:  $prm-font-family;
+              font-size: 0.9em;
+              color: $prm-color;
+              margin: 0 auto;
+              padding: 1vh;
+             
+          }

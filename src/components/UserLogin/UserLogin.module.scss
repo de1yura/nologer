@@ -1,0 +1,152 @@
+@import "../../Assets/Styles/variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding:30px;
+  color: $prm-color;
+  align-content: center;
+  font-family: $prm-font-family;
+  height: 100vh;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width:400px;
+  height: 470px;
+  align-self: center;
+  margin-top: 70px;
+}
+
+.nologer{
+  margin: 50px 0 0 0;
+}
+
+.header{
+  margin: 20px;
+  color: pink;
+}
+
+.user{
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding:10px;
+}
+
+.password{
+  color: $grey-dark;
+  width:340px;
+  height:30px;
+  border-radius: 8px;
+  padding:10px;
+}
+
+.userInput{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: $sec-color;
+  font-weight: 900;
+  height:20vh;
+}
+
+.label{
+  margin-bottom: 10px;
+}
+
+input{
+  margin-bottom: 25px;
+  border: 1px solid lightgrey;
+}
+
+.buttons{
+  display: flex;
+}
+
+.btn{
+  font-size: 15px;
+  width:150px;
+  height: 50px;
+  margin: 40px 20px;
+  padding:15px;
+  background-color: $prm-color;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.signupara{
+  margin-top: 20px;
+  font-size: smaller;
+}
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: x-small;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:30px;
+    color: $prm-color;
+    align-content: center;
+    font-family: $prm-font-family;
+    height: 100vh;
+    margin-left: 5%;
+  }
+
+  .buttons{
+    display: flex;
+    margin-left: 2%;
+  }
+
+  input{
+    margin-bottom: 4%;
+    border: 1px solid lightgrey;
+    margin-left: 2%;
+  }
+
+  .label{
+    margin-bottom: 10px;
+    margin-left: 2.5%;
+  }
+
+  .password{
+    color: $grey-dark;
+    width:340px;
+    height:30px;
+    border-radius: 8px;
+    padding-top: 7px;
+  }
+
+  .user{
+    color: $grey-dark;
+    width:340px;
+    height:30px;
+    border-radius: 8px;
+    padding-top: 7px;
+  }
+
+}

@@ -1,0 +1,32 @@
+@import "../../assets/styles/variables";
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+
+    label {
+      width: 90%;
+      font-family: $prm-font-family;
+      font-size: $prm-font-size*3;
+      font-weight: $sec-font-weight;
+      margin: 10px;
+       
+    }
+
+    input {
+      width: 90%;
+      height: 30px;
+      border: 2px solid $grey-light;
+      border-radius: 5px;
+      font-family: $prm-font-family;
+      font-size: $prm-font-size*3;
+      margin: 0 10px 10px 10px;
+           
+    }
+
+    input:focus {
+      border: 2px solid $prm-color;
+      outline: none;
+
+    }
+}

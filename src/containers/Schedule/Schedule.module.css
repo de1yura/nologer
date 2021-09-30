@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+<<<<<<< HEAD
+  min-width: 380px;
+  width: 35vw;
+  margin: 20px 2.5vw;
+=======
+  width: 35vw;
+  margin: 20px 0px;
+>>>>>>> b57da915900d342a503146d694db6c50d39446dc
+}
+.schedule .scheduleHeader {
+  margin: 20px;
+}
+.schedule .scheduleHeader > p {
+  margin: 0 0 0 20px;
+  font-size: 22px;
+  color: #341664;
+}
+.schedule > section {
+  width: 100%;
+}
+
+<<<<<<< HEAD
+.scheduleSubheading {
+  margin-bottom: 50px;
+=======
+@media only screen and (max-width: 940px) {
+  .schedule {
+    justify-content: center;
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .schedule {
+    width: 90vw;
+    margin-left: 10px;
+  }
+>>>>>>> b57da915900d342a503146d694db6c50d39446dc
+}

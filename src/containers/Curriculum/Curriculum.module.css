@@ -1,0 +1,11 @@
+.curriculum {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+  .curriculum {
+    flex-wrap: wrap;
+  }
+}

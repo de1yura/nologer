@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.notSelected {
+  border: solid #005EB5 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  color: #005EB5;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+  transition: ease 0.3s;
+  margin-bottom: 3vh;
+}
+.notSelected .lessonTitle {
+  margin: 0;
+  padding: 0;
+  color: #005EB5;
+}
+.notSelected .addCourseButton {
+  height: 30px;
+  width: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9px;
+}
+.notSelected .addCourseButton:hover {
+  background-color: #D1D1D1;
+  transition: ease 0.6s;
+}
+.notSelected .addCourseButton > * {
+  color: #341664;
+}
+
+.selected {
+  border: solid #F43268 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "Roboto";
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+  transition: ease-in-out 0.2s;
+  margin-bottom: 3vh;
+}
+.selected .lessonTitle {
+  margin: 0;
+  padding: 0;
+  color: #F43268;
+}
+.selected .addCourseButton {
+  height: 30px;
+  width: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9px;
+}
+.selected .addCourseButton:hover {
+  background-color: #D1D1D1;
+  transition: ease 0.6s;
+}
+.selected .addCourseButton > * {
+  color: #341664;
+}
